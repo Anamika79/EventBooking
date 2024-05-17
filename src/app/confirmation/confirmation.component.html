@@ -1,0 +1,39 @@
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">TicketBuddy</div>
+        <button (click)="logout()" class="login-btn">Logout</button>
+    </div>
+</nav>
+
+<br>
+
+<div class="wrapper">
+    <div class="card">
+        <div class="card-body">
+            <div class="event-info">
+                <div class="event-details">
+                    <h2>Event Name</h2>
+                    <p>Tickets Booked: {{ totalTickets }}</p>
+                    <p>Price: {{ totalPrice | currency:'USD':true }}</p>
+                    <hr>
+                    <p>Date & Time: February 25, 2024, 7:00 PM</p>
+                    <p>Venue: Venue Name, City</p>
+                    <hr>
+                    <div class="ticket-info">
+                        <p>Platinum Ticket (Price: $100): 2 tickets</p>
+                        <!-- Add similar lines for Gold and Silver tickets if needed -->
+                    </div>
+                    <p class="subtotal">Subtotal: {{ totalPrice | currency:'USD':true }}</p>
+                </div>
+                <div class="event-image">
+                    <img src="https://rockymountevents.com/wp-content/uploads/2019/06/Concert-crowd-with-silhouettes-of-people-hold-their-hands-up.jpg"
+                        alt="Show Image">
+                </div>
+            </div>
+            <button data-id="ticket-selector-proceed" class="proceed-button" id="booking-proceed-button"
+                (click)="generateAndDownloadPDF()">Confirm and Pay Now</button>
+        </div>
+
+    </div>
+</div>
+  

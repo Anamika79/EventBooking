@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket System</title>
+   
+</head>
+<body>
+ 
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">TicketBuddy</div>
+    </div>
+</nav>
+<br>
+<div class="content">
+    <div class="text-content">
+        <div class="carousel-container">
+            <div class="carousel">
+             
+                <div class="carousel-item active">
+                    <div class="carousel-heading">
+                        <h2 class="heading-text"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connecting audiences with</h2>
+                        <h2 class="heading-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an all-in-one events platform</h2>
+                    </div>
+                    <div class="carousel-subcontent">
+                        <p class="subcontent-text"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eventcube is a feature-rich, white label event and memberships platform.</p>
+                        <p class="subcontent-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No matter what type of event you’re organizing,</p>
+                        <p class="subcontent-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;we provide cost-effective solutions driven by cutting-edge technology.</p>
+                    </div>
+                </div>
+               
+               
+               
+            </div>
+        </div>
+    </div>
+    <div class="image-content" style="width: 550px;">
+        <img src="https://th.bing.com/th/id/OIP.1XccH4XuykSGhazbOtJ2hgHaEK?w=309&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Event Image" class="event-image" width="600px" height="350px">
+    </div>
+</div>
+ 
+<div class="card-container" style="background-color:#460f68;">
+   
+    <div class="card">
+        <h2 (click)="onBookEventClicked()">Book Event</h2>
+       
+    </div>
+    <div class="card">
+        <h2 (click)="onOrganizeEventClicked()">Organize Event</h2>
+       
+    </div>
+</div>
+<br>
+<!-- <div class="text-card">
+    <h5>A Ticketing System trusted by global brands</h5>
+</div> -->
+ 
+<script src="script.js"></script>
+ 
+<!-- ***************************************************review********************* -->
+ 
+<section style="background-color: #eee6f2;">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="mb-4">A Ticketing System trusted by global brands</h3>
+        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+            Our innovative platform revolutionizes the way businesses manage and resolve customer inquiries, providing a robust and reliable solution for companies worldwide. With a track record of trust and satisfaction from renowned global brands, our Ticketing System ensures a streamlined process for handling customer concerns, enhancing communication, and delivering unparalleled service.
+        </p>
+      </div>
+    </div>
+ 
+    <div class="row text-center">
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3">Maria Smantha</h5>
+        <h6 class="text mb-3" style="color: #460f68;">Web Developer</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+          tenetur.
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-5 mb-md-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3">Lisa Cudrow</h5>
+        <h6 class="text mb-3" style="color: #460f68;">Graphic Designer</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
+          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-0">
+        <div class="d-flex justify-content-center mb-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+            class="rounded-circle shadow-1-strong" width="150" height="150" />
+        </div>
+        <h5 class="mb-3">John Smith</h5>
+        <h6 class="text mb-3" style="color: #460f68;">Marketing Specialist</h6>
+        <p class="px-xl-3">
+          <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
+          dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+        </p>
+        <ul class="list-unstyled d-flex justify-content-center mb-0">
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="fas fa-star fa-sm text-warning"></i>
+          </li>
+          <li>
+            <i class="far fa-star fa-sm text-warning"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+ 
+</body>
+</html>
+<app-footer></app-footer>

@@ -1,0 +1,125 @@
+.card {
+  width: 500px; /* Increased width */
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+}
+
+.total-price,
+.total-tickets {
+  margin-bottom: 5px; /* Add margin between total price and total tickets */
+}
+
+.total-price span,
+.total-tickets span {
+  display: block;
+}
+
+.proceed-button {
+  background-color: transparent;
+  color: #460f68;
+  padding: 10px 20px;
+  border: 2px solid #460f68;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.proceed-button.active {
+  background-color: #460f68;
+  color: white;
+}
+
+.navbar {
+  background-color: #460f68;
+  height: 100px;
+  color: white;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.login-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #df9aff;
+  color: white;
+}
+
+.seat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seat {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.seat span {
+  margin: 0 10px;
+}
+
+.count {
+  margin-top: 20px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2em;
+}
+
+.book-now-btn {
+  background-color: #460f68;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.book-now-btn:hover {
+  background-color: #5e2e93;
+}

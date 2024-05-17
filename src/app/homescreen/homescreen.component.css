@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eee6f2;
+}
+ 
+.navbar {
+    background-color: #460f68;
+    color: #fff;
+    padding: 15px 0;
+}
+ 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+ 
+.login-btn {
+    color: #050505;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+ 
+.content {
+    display: flex;
+}
+ 
+.text-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #460f68;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    font-style: italic;
+}
+ 
+.carousel-container {
+    height: 50vh;
+}
+ 
+.carousel {
+    text-align: center;
+}
+ 
+.carousel-item {
+    display: none;
+}
+ 
+.carousel-item.active {
+    display: block;
+}  
+.carousel-heading {
+    text-align: justify;
+}
+ 
+.carousel-heading .heading-text {
+    font-size: 24px; /* Change font size */
+    font-weight: bold; /* Make text bold */
+    font-family: 'Arial', sans-serif; /* Change font family */
+    padding-left: 30px; /* Add left padding for indentation */
+}
+ 
+.carousel-subcontent {
+    text-align: justify;
+    margin-left: auto; /* Move the subcontent to the right */
+}
+ 
+.carousel-subcontent .subcontent-text {
+    font-family: 'Arial', sans-serif; /* Change font family */
+    padding-left: 30px; /* Add left padding for indentation */
+    margin: 5px 0; /* Add some margin between paragraphs */
+}
+ 
+ 
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 900px;
+    margin-left: 180px;
+   
+    border-radius: 8px;
+padding: 20px;
+}
+ 
+ 
+ 
+ 
+.card {
+    width: 300px;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    border: 2px solid #460f68;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to left,#050505, #460f68);
+    color: #eee6f2;
+}
+ 
+.card h2 {
+    margin-bottom: 10px;
+}
+ 
+.card p {
+    margin: 0;
+}
+.text-card{
+    text-align: center;
+    color:#050505
+}
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+ 
+.event-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}

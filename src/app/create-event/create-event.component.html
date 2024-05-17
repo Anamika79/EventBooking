@@ -1,0 +1,245 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">TicketBuddy</div>
+    <a href="#" class="login-btn">Logout</a>
+  </div>
+</nav>
+
+<br>
+<div class="carousel">
+  <ul class="panes">
+
+
+
+    <li id="s1">
+      <img src="../../../assets/img/ed1.png">
+    </li>
+
+    <li id="s2">
+      <img src="../../../assets/img/2.png">
+    </li>
+    <li id="s3">
+      <img src="../../../assets/img/ed1.png">
+    </li>
+    <li id="s4">
+      <img src="../../../assets/img/2.png">
+    </li>
+    <li id="s2">
+      <img src="../../../assets/img/ed1.png">
+    </li>
+  </ul>
+</div>
+<!-- ---------------------------Form------------------- -->
+<div class="container gradient-custom-2">
+  <section class="h-100 h-custom gradient-custom-2 align-items-center w-100" style="width:500px;">
+    <div class="container py-5 h-100" style="margin-left: 60px; ">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div class="card-body p-0">
+
+
+              <form [formGroup]=" Eventformgroup" (ngSubmit)="OnSubmit()">
+
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="p-5">
+                      <h3 class="fw-normal mb-5" style="color: #460f68;">Event Information</h3>
+                  
+                      <div class="mb-4 pb-2">
+                        <div class="input-field"
+                            [class.error]="Eventformgroup.controls['categoryId'].dirty && Eventformgroup.controls['categoryId'].errors?.['required']">
+                            <label class="form-label" for="form3Examplev2">Category</label>
+                            <select class="select form-control" formControlName="categoryId">
+                                <option *ngFor="let item of CatArray" [value]="item.categoryID">{{item.categoryName}}</option>
+                            </select>
+                            <small
+                                *ngIf="Eventformgroup.controls['categoryId'].dirty && Eventformgroup.controls['categoryId'].errors?.['required']"
+                                class="text-danger">
+                                *Category Name is required
+                            </small>
+                        </div>
+                      </div>
+                  
+                      <div class="mb-4 pb-2">
+                        <div class="input-field"
+                            [class.error]="Eventformgroup.controls['eventName'].dirty && Eventformgroup.controls['eventName'].errors?.['required']">
+                            <label class="form-label" for="form3Examplev2">Event Name</label>
+                            <input type="text" id="form3Examplev2" class="form-control form-control-lg equal-width"
+                                formControlName="eventName" />
+                            <small
+                                *ngIf="Eventformgroup.controls['eventName'].dirty && Eventformgroup.controls['eventName'].errors?.['required']"
+                                class="text-danger">
+                                *Event Name is required
+                            </small>
+                        </div>
+                      </div>
+                  
+                      <div class="mb-4 pb-2">
+                        <div class="input-field"
+                            [class.error]="Eventformgroup.controls['venueName'].dirty && Eventformgroup.controls['venueName'].errors?.['required']">
+                            <label class="form-label" for="form3Examplev2">Venue Name</label>
+                            <input type="text" id="form3Examplev2" class="form-control form-control-lg equal-width"
+                                formControlName="venueName" />
+                            <small
+                                *ngIf="Eventformgroup.controls['venueName'].dirty && Eventformgroup.controls['venueName'].errors?.['required']"
+                                class="text-danger">
+                                *Venue Name is required
+                            </small>
+                        </div>
+                      </div>
+                  
+                      <div class="mb-4 pb-2">
+                        <div class="input-field"
+                            [class.error]="Eventformgroup.controls['location'].dirty && Eventformgroup.controls['location'].errors?.['required']">
+                            <label class="form-label" for="form3Examplev2">Location</label>
+                            <select class="select form-control equal-width" formControlName="location">
+                                <option *ngFor="let i of LocArray" [value]="i.locationID">{{i.locationName}}</option>
+                            </select>
+                            <small
+                                *ngIf="Eventformgroup.controls['location'].dirty && Eventformgroup.controls['location'].errors?.['required']"
+                                class="text-danger">
+                                *Location is required
+                            </small>
+                        </div>
+                      </div>
+                  
+                      <div class="mb-4 pb-2">
+                        <div class="input-field"
+                            [class.error]="Eventformgroup.controls['eventDescription'].dirty && Eventformgroup.controls['eventDescription'].errors?.['required']">
+                            <label class="form-label" for="form3Examplev4" style="color: #460f68;">Event Description</label>
+                            <textarea class="form-control equal-width" rows="3" formControlName="eventDescription"></textarea>
+                            <small
+                                *ngIf="Eventformgroup.controls['eventDescription'].dirty && Eventformgroup.controls['eventDescription'].errors?.['required']"
+                                class="text-danger">
+                                *Event Description is required
+                            </small>
+                        </div>
+                      </div>
+                  
+                      <div class="row">
+                        <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
+                            <div class="input-field"
+                                [class.error]="Eventformgroup.controls['startDate'].dirty && Eventformgroup.controls['startDate'].errors?.['required']">
+                                <label class="form-label" for="form3Examplev5">Event Start Date</label>
+                                <input type="datetime-local" id="form3Examplev5" class="form-control form-control-lg equal-width"
+                                    formControlName="startDate" />
+                                <small
+                                    *ngIf="Eventformgroup.controls['startDate'].dirty && Eventformgroup.controls['startDate'].errors?.['required']"
+                                    class="text-danger">
+                                    *Event Start Date is required
+                                </small>
+                            </div>
+                        </div>
+                  
+                        <div class="col-md-6">
+                          <div class="input-field"
+                            [class.error]="Eventformgroup.controls['endDate'].dirty && Eventformgroup.controls['endDate'].errors?.['required']">
+                            <label class="form-label" for="form3Examplev5">Event End Date</label>
+                            <input type="datetime-local" id="form3Examplev5" class="form-control form-control-lg equal-width"
+                              formControlName="endDate" />
+                            <small
+                              *ngIf="Eventformgroup.controls['endDate'].dirty && Eventformgroup.controls['endDate'].errors?.['required']"
+                              class="text-danger">
+                              *Event End Date is required
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-6 bg-indigo text-white">
+                    <div class="p-5">
+                      <h3 class="fw-normal mb-5" style="color:#460f68;">Seating Details</h3>
+
+                      <div class="row">
+                        <div class="col-md-5 mb-4 pb-2">
+
+                          <div class="form-outline form-white">
+                            <input type="number" id="form3Examplea4" class="form-control form-control-lg"
+                              formControlName="totalPlatinum" />
+                            <label class="form-label" for="form3Examplea4" style="color:#460f68;">No: of Platinum
+                              seats</label>
+                          </div>
+
+                        </div>
+                        <div class="col-md-7 mb-4 pb-2">
+
+                          <div class="form-outline form-white">
+                            <input type="decimal" id="form3Examplea5" class="form-control form-control-lg"
+                              placeholder="₹" formControlName="platinumPrice" />
+                            <label class="form-label" for="form3Examplea5" style="color:#460f68;">Price per seat</label>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-5 mb-4 pb-2">
+
+                          <div class="form-outline form-white">
+                            <input type="number" id="form3Examplea7" class="form-control form-control-lg"
+                              formControlName="totalGold" />
+                            <label class="form-label" for="form3Examplea7" style="color:#460f68;">No: of Gold
+                              seats</label>
+                          </div>
+
+                        </div>
+                        <div class="col-md-7 mb-4 pb-2">
+
+                          <div class="form-outline form-white">
+                            <input type="decimal" id="form3Examplea8" class="form-control form-control-lg"
+                              placeholder="₹" formControlName="goldPrice" />
+                            <label class="form-label" for="form3Examplea8" style="color:#460f68;">Price</label>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-5 mb-4 pb-2">
+
+                          <div class="form-outline form-white">
+                            <input type="number" id="form3Examplea7" class="form-control form-control-lg"
+                              formControlName="totalSilver" />
+                            <label class="form-label" for="form3Examplea7" style="color:#460f68;">No: of Silver
+                              seats</label>
+                          </div>
+
+                        </div>
+                        <div class="col-md-7 mb-4 pb-2">
+
+                          <div class="form-outline form-white">
+                            <input type="decimal" id="form3Examplea8" class="form-control form-control-lg"
+                              placeholder="₹" formControlName="silverPrice" />
+                            <label class="form-label" for="form3Examplea8" style="color:#460f68;">Price</label>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                        <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
+                        <label class="form-check-label text" for="form2Example3" style="color:#460f68;">
+                          I do accept the <a href="#!" class="text" style="color:#460f68;"><u>Terms and
+                              Conditions</u></a> of your
+                          site.
+                        </label>
+                      </div>
+
+                      <button type="submit" class="btn btnc btn-lg" data-mdb-ripple-color="dark">Create Event</button>
+
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<br>

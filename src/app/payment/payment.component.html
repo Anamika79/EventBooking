@@ -1,0 +1,56 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">TicketBuddy</div>
+    <button href="#" class="login-btn">Logout</button>
+  </div>
+</nav>
+
+<br>
+
+<div class="wrapper">
+  <div class="card">
+    <div class="card-body">
+      <div class="seat-container">
+        <div class="seat">
+          <span>Platinum Seat</span>
+          <button class="icon-btn plus-btn" (click)="increment('platinum')">+</button>
+          <span class="count">{{ platinumCount }}</span>
+          <button class="icon-btn minus-btn" (click)="decrement('platinum')">-</button>
+        </div>
+      </div>
+    </div>
+    <hr> <!-- Line break -->
+    <div class="card-body">
+      <div class="seat-container">
+        <div class="seat">
+          <span>Gold Seat</span>
+          <button class="icon-btn plus-btn" (click)="increment('gold')">+</button>
+          <span class="count">{{ goldCount }}</span>
+          <button class="icon-btn minus-btn" (click)="decrement('gold')">-</button>
+        </div>
+      </div>
+    </div>
+    <hr> <!-- Line break -->
+    <div class="card-body">
+      <div class="seat-container">
+        <div class="seat">
+          <span>Silver Seat</span>
+          <button class="icon-btn plus-btn" (click)="increment('silver')">+</button>
+          <span class="count">{{ silverCount }}</span>
+          <button class="icon-btn minus-btn" (click)="decrement('silver')">-</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <div class="total">
+        <div class="total-price">
+          <span>{{ totalPrice | currency:'INR':true }}</span>
+        </div>
+        <div class="total-tickets">
+          <span>{{ totalTickets }} tickets</span>
+        </div>
+      </div>
+      <button data-id="ticket-selector-proceed" class="proceed-button" id="booking-proceed-button" [ngClass]="{ 'active': totalTickets > 0 }" (click)="downloadPDF()">Proceed</button>
+    </div>
+  </div>
+</div>

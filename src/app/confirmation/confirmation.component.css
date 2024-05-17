@@ -1,0 +1,93 @@
+.card {
+    width: 300px; /* Decreased width */
+    height: 420px; /* Increased height */
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.event-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.event-image {
+    width: 80px; /* Adjust image width as needed */
+}
+
+.event-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.event-details {
+    width: calc(100% - 100px); /* Adjust width to accommodate the image */
+}
+
+.event-details h2 {
+    margin-top: 0; /* Remove top margin for event name */
+}
+
+.ticket-info p {
+    margin: 5px 0;
+}
+
+.subtotal {
+    color: #460f68; /* Purple color */
+    font-weight: bold;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.proceed-button {
+    width: 100%; /* Button width equal to card width */
+    background-color: #460f68;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.proceed-button:hover {
+    background-color: #5e2e93;
+}
+
+.navbar {
+    background-color: #460f68;
+    height: 100px;
+    color: white;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #df9aff;
+    color: white;
+}

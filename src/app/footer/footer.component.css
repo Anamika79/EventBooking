@@ -1,0 +1,56 @@
+.footer {
+    background-color: #460f68; /* Background color of the footer */
+    color: #fff; /* Text color */
+    padding: 30px 0; /* Adjust padding as needed */
+}
+ 
+.container {
+    max-width: 1200px; /* Set maximum width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+}
+ 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.footer-logo img {
+    width: 150px; /* Adjust the logo size as needed */
+}
+ 
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between links */
+}
+ 
+.footer-links ul li:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+}
+ 
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add smooth transition for color change */
+}
+ 
+.footer-links ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+ 
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px; /* Adjust icon size as needed */
+    margin-left: 10px; /* Adjust spacing between icons */
+}
+ 
+.footer-social a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
